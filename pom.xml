@@ -32,7 +32,7 @@
       <repository>
         <id>central</id>
         <name>maven-local-snapshots</name>
-        <url>https://psemea.jfrog.io/artifactory/fdm-mvn-virt</url>
+        <url>https://psemea.jfrog.io/artifactory/fdm-test-mat-issue</url>
       </repository>
     </distributionManagement>
     <build>

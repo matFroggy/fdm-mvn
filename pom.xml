@@ -28,13 +28,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-      <repository>
+<distributionManagement>
+    <repository>
         <id>central</id>
-        <name>maven-local-snapshots</name>
+        <name>psemea-artifactory-primary-0-releases</name>
         <url>https://psemea.jfrog.io/artifactory/fdm-test-mat-issue</url>
-      </repository>
-    </distributionManagement>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>psemea-artifactory-primary-0-snapshots</name>
+        <url>https://psemea.jfrog.io/artifactory/fdm-test-mat-issue</url>
+    </snapshotRepository>
+</distributionManagement>
     <build>
         <pluginManagement>
             <plugins>

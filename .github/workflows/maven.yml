@@ -51,7 +51,7 @@ jobs:
         # Jfrog CLI maven configuration
         jf mvn-config
         # Jfrog CLI maven install
-        jf mvn clean install --file pom.xml --settings .m2/settings.xml --project fdm
+        jf mvn clean install --file pom.xml --project fdm
         # Collect environment variables for the build
         jf rt build-collect-env --project fdm
         # Collect VCS details from git and add them to the build

@@ -49,9 +49,9 @@ jobs:
         JFROG_CLI_BUILD_NUMBER : ${{ github.run_number }}
       run: |
         # Jfrog CLI maven configuration
-        jf mvn-config
+        jf mvn-config --repo-resolve-releases tf-mvn-virt --repo-resolve-snapshots tf-mvn-virt --repo-deploy-releases tf-mvn-virt --repo-deploy-snapshots tf-mvn-virt 
         # Jfrog CLI maven install
-        jf mvn clean install -f pom.xml --project fdm
+        jf mvn clean install --project fdm
         # Collect environment variables for the build
         jf rt build-collect-env --project fdm
         # Collect VCS details from git and add them to the build

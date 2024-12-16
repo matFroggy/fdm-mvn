@@ -28,7 +28,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+      <repository>
+        <id>central</id>
+        <name>maven-local-snapshots</name>
+        <url>https://psemea.jfrog.io/artifactory/fdm-mvn-virt</url>
+      </repository>
+    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
